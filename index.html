@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-7-Budget Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="piggy-bank-solid.svg">
+    <script src="https://kit.fontawesome.com/a1e74affc8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="top-container">
+        <div class="top-dashboard">
+            <div class="dashboard-overall">
+                <h2> Budget on <span id="nowMonth"> Mar 2020</span></h2>
+                <h1 id="overallBudgetValue"> $ 0</h1>
+            </div>
+            <div class="dashboard-details">
+                <div class="dashboard-income dashboard-details-half">
+                    <h2> Income </h2>
+                    <h2 id="overallIncomeValue">$ 0</h2>
+                </div>
+                <div class="dashboard-expense dashboard-details-half">
+                    <h2> Expense </h2>
+                    <h2 id="overallExpenseValue"> $ 0 </h2>
+                </div>
+            </div>
+        </div>
+        <div class="top-input">
+            <div class="input-selection input-bar">
+                <select class="add__type">
+                    <option value="income" selected>+</option>
+                    <option value="expense">-</option>
+                </select>
+            </div>
+            <div class="input-description input-bar">
+                <input class="input-type input-type-expense" type="text" id="input--description" placeholder="Add Description">
+            </div>
+            <div class="input-value input-bar ">
+                <input class="input-type input-type-expense" type="number" id="input--value" placeholder="Value">
+            </div>
+            <div class="input-confirm input-bar"><i class="confirm-btn far fa-check-circle input-type-expense-confirm"></i></div>
+        </div>
+    </div>
+
+
+    <div class="bottom-container">
+        <div class="lists-container">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
